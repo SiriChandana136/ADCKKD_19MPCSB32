@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+class Swap
+{
+public static void main(String args[])
+{
+int a,b;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter value a: ");
+a=s.nextInt();
+System.out.println("Enter value b: ");
+b=s.nextInt();
+System.out.println("Before Swapping:\na="+a+"\tb="+b);
+a=a+b;
+b=a-b;
+a=a-b;
+System.out.println("After Swapping:\na="+a+"\tb="+b);
+}
+}
+
+Output:
+E:\Coding>java Swap
+Enter value a:
+6
+Enter value b:
+12
+Before Swapping:
+a=6     b=12
+After Swapping:
+a=12    b=6
