@@ -1,0 +1,39 @@
+import java.util.*;
+class EvenNum
+{
+public static void main(String args[])
+{
+int n,m;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter n");
+n=s.nextInt();
+System.out.println("Enter m");
+m=s.nextInt();
+Even o=new Even();
+if(m%2==0)
+{
+while(m>=n)
+{
+System.out.print(m+"\t");
+m-=2;
+}
+}
+else
+{
+m-=1;
+while(m>=n)
+{
+System.out.print(m+"\t");
+m-=2;
+}
+}
+}
+}
+
+Output:
+E:\Coding>java EvenNum
+Enter n
+23
+Enter m
+32
+32      30      28      26      24
