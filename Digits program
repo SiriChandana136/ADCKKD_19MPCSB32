@@ -1,0 +1,28 @@
+import java.util.*;
+class Digits
+{
+public static void main(String args[])
+{
+int n,r=0,even=0,odd=0;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter a number");
+n=s.nextInt();
+while(n!=0)
+{
+r=n%10;
+if(r%2==0)
+even+=1;
+else
+odd+=1;
+n=n/10;
+}
+System.out.println("No.of even digits are :"+even+"\nNo.of odd digits are :"+odd);
+}
+}
+
+Output:
+E:\Coding>java Digits
+Enter a number
+3569
+No.of even digits are :1
+No.of odd digits are :3
