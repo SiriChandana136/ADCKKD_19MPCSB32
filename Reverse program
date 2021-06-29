@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class Reverse {
+
+    public static void main(String[] args)
+   {
+        long n,rem=0,res=0;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=s.nextLong();
+        while(n!=0)
+        {
+            rem=n%10;
+            res=(res*10)+rem;
+            n=n/10;
+        }
+        System.out.println(res);
+    }
+}
+
+Output:
+E:\Coding>java Reverse
+Enter a number
+1368
+8631
