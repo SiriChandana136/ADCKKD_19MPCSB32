@@ -1,0 +1,31 @@
+import java.util.*;
+class BiggestNum
+{
+public static void main(String args[])
+{
+int a,b,c,d,big=0;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter value a");
+a=s.nextInt();
+System.out.println("Enter value b");
+b=s.nextInt();
+System.out.println("Enter value c");
+c=s.nextInt();
+System.out.println("Enter value d");
+d=s.nextInt();
+big=(a>b?(a>c?(a>d?a:d):(c>d?c:d)):(b>c?(b>d?b:d):(c>d?c:d)));
+System.out.println("Biggest number is "+big);
+}
+}
+
+Output:
+E:\Coding>java BiggestNum
+Enter value a
+2
+Enter value b
+6
+Enter value c
+60
+Enter value d
+89
+Biggest number is 89
