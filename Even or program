@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+class EvenOrOdd
+{
+public static void main(String args[])
+{
+int n;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter a number");
+n=s.nextInt();
+if((n&1)==1)
+System.out.println("Given number is odd");
+else
+System.out.println("Given number is even");
+}
+}
+
+Output:
+E:\Coding>java EvenOrOdd
+Enter a number
+36
+Given number is even
+
+E:\Coding>java EvenOrOdd
+Enter a number
+23
+Given number is odd
