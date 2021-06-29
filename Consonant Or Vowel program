@@ -1,0 +1,21 @@
+import java.util.*;
+class ConsonantOrVowel
+{
+public static void main(String args[])
+{
+char x,n;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter an alphabet");
+x=s.next().charAt(0);
+if(x=='a'|x=='e'|x=='i'|x=='o'|x=='u')
+System.out.println("Given alphabet is a vowel");
+else
+System.out.println("Given alphabet is a consonant");
+}
+}
+
+Output:
+E:\Coding>java ConsonantOrVowel
+Enter an alphabet
+g
+Given alphabet is a consonant
