@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.Math;
+class Result
+{
+    public static void main(String args[])
+    {
+        long n,r,num,sum=0,pro=1,res,x;
+        Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+        x=(long)Math.pow(10,5);
+        if(n>=1&&n<=x)
+        {
+        num=n;
+        while(n>0)
+        {
+            r=n%10;
+            sum=sum+r;
+            n/=10;
+        }
+        while(num>0)
+        {
+            r=num%10;
+            pro=pro*r;
+            num/=10;
+        }
+        res=pro-sum;
+	if(res<0)
+	res=res*(-1);
+        System.out.println(res);
+        }
+    }
+}
+
+Output:
+E:\Coding>java Result
+11235
+18
