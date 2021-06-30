@@ -1,0 +1,44 @@
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+ 
+public class ReverseNeg {
+
+    public static void main(String[] args) {
+       
+    int x,r,rev=0;
+        Scanner s=new Scanner(System.in);
+	System.out.println("Enter a number");
+        x=s.nextInt();
+        boolean n=x<0?true:false;
+        if(n)
+        {
+            x*=(-1);
+            
+        } 
+            while(x>0)
+            {
+               
+                r=x%10;
+                rev=(rev*10)+r;
+                x=x/10;
+            }
+        if(n)        
+            System.out.println(rev*-1);
+        else
+        System.out.println(rev);
+       
+    }
+}
+
+Output:
+E:\Coding>java ReverseNeg
+Enter a number
+324
+423
+
+E:\Coding>java ReverseNeg
+Enter a number
+-567
+-765
