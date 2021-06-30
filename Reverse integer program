@@ -7,7 +7,7 @@ public class ReverseNeg {
 
     public static void main(String[] args) {
        
-    int x,r,rev=0;
+    long x,r,rev=0;
         Scanner s=new Scanner(System.in);
 	System.out.println("Enter a number");
         x=s.nextInt();
