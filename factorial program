@@ -1,0 +1,42 @@
+import java.util.*;
+class Factorial
+{
+public static void main(String args[])
+{
+int i,t;
+Scanner s=new Scanner(System.in);
+t=s.nextInt();
+int n[]=new int[100];
+if(t>=1&&t<=100)
+{
+for(i=1;i<=t;i++)
+{
+n[i]=s.nextInt();
+}
+for(i=1;i<=t;i++)
+{
+if((n[i]>=1)&&(n[i]<=100))
+{
+int fact=1;
+while(n[i]!=0)
+{
+fact=fact*n[i];
+n[i]--;
+}
+System.out.println(fact);
+}
+}
+}
+}
+}
+OUTPUT:
+E:\Coding>java Factorial
+4
+1
+2
+5
+3
+1
+2
+120
+6
