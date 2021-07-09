@@ -1,0 +1,28 @@
+import java.util.*;
+class Equal
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String st;
+System.out.println("Enter string : ");
+st=sc.next();
+int u=0,l=0,d=0,s=0;
+char ch[]=st.toCharArray();
+for(int i=0;i<ch.length;i++)
+{
+if(Character.isUpperCase(ch[i]))
+u++;
+else if(Character.isLowerCase(ch[i]))
+l++;
+else if(Character.isDigit(ch[i]))
+d++;
+else
+s++;
+}
+if(u==l&&l==d&&d==s)
+System.out.println("Yes");
+else
+System.out.println("No");
+}
+}
