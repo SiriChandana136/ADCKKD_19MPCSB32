@@ -1,0 +1,58 @@
+import java.util.*;
+class Rotations
+{
+public static void main(String args[])
+{
+int i,r,x,y,n;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter array size ");
+n=s.nextInt();
+System.out.println("Enter no.of right rotations ");
+x=s.nextInt();
+System.out.println("Enter no.of left rotations ");
+y=s.nextInt();
+int a[]=new int[n];
+int b[]=new int[n];
+int c[]=new int[n];
+System.out.println("Enter array elements ");
+for(i=0;i<n;i++)
+
+a[i]=s.nextInt();
+if(x<=n)
+{
+for(r=1;r<=x;r++)
+
+{
+for(i=0;i<n;i++)
+
+{
+if(i+x<n)
+{
+b[i+x]=a[i];
+}
+else
+b[i+x-n]=a[i];
+}
+}
+}
+if(y<=n)
+{
+for(r=0;r<=y;r++)
+
+{
+for(i=0;i<n;i++)
+
+{
+if(i-y<0)
+{
+c[n+i-y]=b[i];
+}
+else
+c[i-y]=b[i];
+}
+}
+}
+for(i=0;i<n;i++)
+System.out.print(c[i]+" ");
+}
+}
