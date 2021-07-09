@@ -1,0 +1,31 @@
+import java.util.*;
+class Palindrome
+{
+public static void main(String args[])
+{
+int c=0,r=0;
+Scanner sc=new Scanner(System.in);
+String st;
+System.out.println("Enter string : ");
+st=sc.next();
+String str=st;
+char a[]=st.toCharArray();
+char b[]=st.toCharArray();
+String ch[]=st.split(" ");
+int n=a.length;
+int m=n;
+for(int i=n-1;i>=0;i--)
+{
+for(int j=r;(j<r+1)&&(j<m);j++)
+{
+if(a[i]==b[j])
+c++;
+}
+r++;
+}
+if(c==n)
+System.out.println("Palindrome");
+else
+System.out.println("Not a palindrome");
+}
+}
