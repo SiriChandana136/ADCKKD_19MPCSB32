@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.*;
+class EvenOddString
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String s;
+int i,j,k,n,z=0,y=0;
+System.out.println("Enter string : ");
+s=sc.nextLine();
+char a[]=s.toCharArray();
+n=a.length;
+char[] b=new char[n];
+char[] c=new char[n];
+for(i=0;i<n;i++)
+{
+if(a[i]%2!=0)
+{
+for(j=z;j<j+1&&j<n;j++)
+b[j]=a[i];
+z++;
+}
+else
+{
+for(k=y;k<k+1&&k<n;k++)
+c[k]=a[i];
+y++;
+}
+}
+for(j=0;j<z;j++)
+System.out.print(b[j]);
+System.out.print(" ");
+for(k=0;k<y;k++)
+System.out.print(c[k]);
+}
+}
