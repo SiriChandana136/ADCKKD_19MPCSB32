@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+class ReverseEach
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String s,str;
+int i,z=0;
+System.out.println("Enter string : ");
+s=sc.nextLine();
+String a[]=s.split(" ");
+for(i=0;i<a.length;i++)
+{
+String st=a[i];
+int x=st.length();
+char[] b=new char[x];
+for(int j=x-1;j>=0;j--)
+{
+for(int k=z;k<k+1&&k<x;k++)
+b[k]=st.charAt(j);
+z++;
+}
+z=0;
+str=String.valueOf(b);
+a[i]=str;
+}
+for(i=0;i<a.length;i++)
+System.out.print(a[i]+" ");
+}
+}
